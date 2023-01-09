@@ -10,7 +10,7 @@ server:
       charset: UTF-8
   tomcat:
     uri-encoding: UTF-8
-  port: 9999
+  port: 0 # 9999
 
 spring:
   mvc:
@@ -35,3 +35,12 @@ spring:
         format_sql: true
     defer-datasource-initialization: true
     open-in-view: true
+  session:
+    storage-type: redis
+  redis:
+    host: localhost
+    port: 6379
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: sample-group

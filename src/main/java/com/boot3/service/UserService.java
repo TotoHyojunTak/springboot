@@ -1,7 +1,7 @@
 package com.boot3.service;
 
 
-import com.boot3.data.dto.request.UserReqDTO;
+import com.boot3.data.dto.request.UserRecordReqDTO;
 import com.boot3.data.dto.request.UserSaveReqDTO;
 import com.boot3.data.dto.response.UserDTO;
 import com.boot3.data.entity.UserEntity;
@@ -18,8 +18,8 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    public UserDTO getUserInfo(UserReqDTO dto) {
-        return UserMapper.INSTANCE.toDto(userRepository.findByUserId(dto.getUserId()));
+    public UserDTO getUserInfo(UserRecordReqDTO dto) {
+        return UserMapper.INSTANCE.toDto(userRepository.findByUserId(dto.userId()));
     }
 
     public List<UserDTO> getUserList() {

@@ -1,6 +1,5 @@
 package com.boot3.data.mapstruct;
 
-import com.boot3.data.dto.request.UserReqDTO;
 import com.boot3.data.dto.request.UserSaveReqDTO;
 import com.boot3.data.dto.response.UserDTO;
 import com.boot3.data.entity.UserEntity;
